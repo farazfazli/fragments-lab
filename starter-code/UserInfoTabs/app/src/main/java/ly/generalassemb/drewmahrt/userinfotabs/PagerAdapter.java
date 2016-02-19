@@ -18,15 +18,16 @@ public class PagerAdapter extends FragmentStatePagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
+        PictureFragment tab1 = new PictureFragment();
+        AboutFragment tab2 = new AboutFragment();
+        ContactFragment tab3 = new ContactFragment();
 
         switch (position) {
             case 0:
-                PictureFragment tab1 = new PictureFragment();
                 return tab1;
             case 1:
-                //TODO: Add your second tab
+                return tab2;
             case 2:
-                //TODO: Add your third tab
                 return tab3;
             default:
                 return null;
